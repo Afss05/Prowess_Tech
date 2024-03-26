@@ -7,18 +7,46 @@
     margin: 0px;
 }
 
-nav{
+.top_nav {
+    background-color: #091E3E;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top_nav a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .top_nav{
+        display: block !important;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .top_nav a p{
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+    .cname {
+        padding-top: 0px !important;
+    }
+}
+
+.sec-nav{
     width: auto;
-    height: 80px;
+    height: 70px;
     background-color: transparent;
-    box-shadow: 2px 2px 5px black;
-    font-family: "Alegreya SC", serif;
-    font-weight: 600;
+    box-shadow: 1px 1px 2px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
     font-size: 18px;
 }
 
 .navbar-brand{
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .nav-item {
@@ -34,9 +62,8 @@ nav{
     background: linear-gradient(0deg, rgba(2,252,255,1) 0%, rgba(45,157,253,1) 100%); */
     background: rgb(106,159,249);
 background: linear-gradient(0deg, rgba(106,159,249,1) 0%, rgba(45,157,253,1) 100%);
-    height: 600px;
+    height: auto;
     width: 100%;
-    overlay: black;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
@@ -54,12 +81,16 @@ background: linear-gradient(0deg, rgba(106,159,249,1) 0%, rgba(45,157,253,1) 100
 /* top bar */
 
 .top-menu {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .ms {
     color: white;
     font-size: 25px;
+}
+
+.cname {
+    padding-top: 100px;
 }
 
 .cname h1{
