@@ -8,8 +8,8 @@
 }
 
 .top_nav {
-    /* background-color: #091E3E; */
-    background: hsla(276, 91%, 79%, 1);
+    background-color: #005CA9;
+    /* background: hsla(276, 91%, 79%, 1);
 
 background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
 
@@ -17,7 +17,7 @@ background: -moz-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%
 
 background: -webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 ); */
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -46,7 +46,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", en
 
 .sec-nav{
     width: auto;
-    height: 70px;
+    height: 80px;
     background-color: transparent;
     box-shadow: 1px 1px 2px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -55,7 +55,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", en
 }
 
 .navbar-brand{
-    padding-left: 30px;
+    padding-left: 100px;
+    /* padding-left: 30px; */
 }
 
 .nav-item {
@@ -78,14 +79,9 @@ hr{
 }
 
 .top_bar {
-    /* background-image: url(../images/bc4.jpg);
-    background-position: center;
-    background-size: cover; */
-    /* background: rgb(2,252,255);
-    background: linear-gradient(0deg, rgba(2,252,255,1) 0%, rgba(45,157,253,1) 100%); */
-    /* background: rgb(106,159,249);
-background: linear-gradient(0deg, rgba(106,159,249,1) 0%, rgba(45,157,253,1) 100%); */
-background: hsla(276, 91%, 79%, 1);
+    background-color: #005CA9;
+
+/* background: hsla(276, 91%, 79%, 1);
 
 background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
 
@@ -93,9 +89,24 @@ background: -moz-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%
 
 background: -webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 ); */
     height: auto;
     width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 20px;
+        margin-top: -20px;
+    }
+    .nav-btn {
+        margin-top: -20px;
+        padding-right: 10px;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        z-index: 1;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
