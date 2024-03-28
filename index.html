@@ -23,33 +23,14 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
   <!-- header -->
 
   <div class="top_nav col-lg-12 d-flex ">
-    <!-- <nav class=" "> -->
-    <!-- <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
-      </div> -->
     <a href="tel:+91 1234567890"><span><ion-icon name="call"></ion-icon></span> 1234567890</a>
     <a target="_blank" rel="noopener noreferrer">
       <p style="margin-bottom: 0px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;"
@@ -114,6 +95,8 @@
                 </p>
               </div>
             </div>
+
+
             <div class="col-md-6 zoom-img-container">
               <!-- <div class="box"></div> -->
               <img src="./asset/images/H_R_1.png" alt="" width="100%">
@@ -136,26 +119,58 @@
               dedicated to crafting cutting-edge solutions that drive success. Our passion for technology fuels our
               journey, as we strive to redefine industries and empower businesses worldwide.</p>
           </div>
+
+
           <div class="col-md-6 mt-5">
             <div class="enquiry-form">
               <form action="#" method="post">
                 <h3>For Enquiry</h3>
-                <div class="form-group">
-                  <div class="input-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <div class="input-group">
+                  <div class="form-group">
+                    <!-- <label for="fname">First Name:</label><br> -->
+                    <ion-icon name="person-outline" class="form-icon"></ion-icon>
+                    <input type="text" id="fname" name="fname" placeholder="First Name *" required>
                   </div>
-                  <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                  <div class="form-group">
+                    <label for="lname">
+                      <ion-icon name="person-outline" class="form-icon"></ion-icon>
+                      <span class="hidden-label">Last Name *</span>
+                  </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name *" required>
                   </div>
                 </div>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+                <div class="form-group">
+                  <!-- <label for="company">Company:</label><br> -->
+                  <ion-icon name="business-outline" class="form-icon"></ion-icon>
+                  <!-- <i class="fa-thin fa-building"></i> -->
+                  <input type="text" id="company" placeholder="company *" name="Company">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="email">Email:</label><br> -->
+                  <ion-icon name="mail-outline" class="form-icon"></ion-icon>
+                  <input type="email" id="email" name="email" placeholder="Email *" required>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="phone">Phone:</label><br> -->
+                  <ion-icon name="call-outline" class="form-icon"></ion-icon>
+                  <input type="tel" id="phone" placeholder="Phone *" name="phone">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="product">Product:</label><br> -->
+                  <ion-icon name="layers-outline" class="form-icon"></ion-icon>
+                  <input type="text" id="product" name="Product">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="enquiry">Type of Enquiry:</label><br> -->
+                  <ion-icon name="chatbubble-ellipses-outline" class="form-icon"></ion-icon>
+                  <select id="enquiry" name="enquiry" placeholder="type">
+                    <option value="type" ></option>
+                    <option value="General">General</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Support">Support</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
                 <input type="submit" value="Submit">
               </form>
             </div>
