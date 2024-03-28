@@ -59,6 +59,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", en
     /* padding-left: 30px; */
 }
 
+.navbar-brand img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px blue;
+}
+
 .nav-item {
     margin-left: 20px;
 }
@@ -96,12 +101,14 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", en
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .navbar-brand {
-        padding-left: 20px;
-        margin-top: -20px;
+        padding-left: 10px;
+        /* margin-top: -20px; */
+        height: 50px;
+        width: 10px;
     }
     .nav-btn {
-        margin-top: -20px;
-        padding-right: 10px;
+        margin-right: 10px;
+        /* padding-right: 20px; */
     }
     .navbar-nav {
         background-color: #fff;
@@ -117,7 +124,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", en
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .navbar-nav{
-        margin-left: 700px;
+        margin-left: 500px;
     }
 }
 
