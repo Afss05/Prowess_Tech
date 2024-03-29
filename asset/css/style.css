@@ -175,7 +175,20 @@ hr{
 /* Styles for form elements */
 .enquiry-form {
     background-color: white;
-    box-shadow: 1px 1px 5px rgb(75, 75, 75);
+    box-shadow: 1px 1px 5px rgb(75, 75, 75) inset;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+}
+.enquiry-form h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.input-group {
+    display: flex !important;
+    gap: 30px;
+    /* justify-content: space-between; */
 }
 
 /* Styles for form elements */
@@ -193,11 +206,12 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-    width: 250px; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     padding: 8px;
     padding-left: 40px; /* Adjust according to icon width */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 
@@ -207,16 +221,21 @@ select {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #aaa; /* Adjust icon color */
+    /* color: #aaa; */
+    color: #005CA9;
 }
 
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #005CA9;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+    width: 50%;
+    margin-left: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Hide the label text but keep it accessible for screen readers */
@@ -229,4 +248,13 @@ input[type="submit"] {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+.input-group {
+    display: block;
+}
+input[type="submit"] {
+    margin-left: 60px;
+}
 }
