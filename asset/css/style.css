@@ -51,7 +51,7 @@
 
 .navbar-brand img {
     border-radius: 10px;
-    box-shadow: 1px 1px 8px blue;
+    box-shadow: 1px 1px 8px #ADD8E6;
 }
 
 .nav-item {
@@ -92,7 +92,10 @@ hr{
     }
     .navbar-nav {
         background-color: #fff;
-        z-index: 1;
+        z-index: 999px;
+    }
+    .ms {
+        z-index: -10px;
     }
 }
 
@@ -252,9 +255,26 @@ input[type="submit"] {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
 .input-group {
-    display: block;
+    display: block !important;
+    gap: 0px;
 }
 input[type="submit"] {
     margin-left: 60px;
 }
+}
+
+/* home ser */
+
+.home-services {
+    margin-top: 20px;
+    background-color: rgb(219, 218, 218);
+    padding-top: 50px;
+}
+
+.home-services h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* border-bottom: 1px solid blue; */
 }
