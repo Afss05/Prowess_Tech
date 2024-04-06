@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prowess Texh</title>
+  <title>Prowess Tech</title>
 
   <!-- boostrap link -->
 
@@ -53,7 +53,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -68,7 +68,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link ">Contact</a>
+            <a class="nav-link " href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -81,7 +81,7 @@
         <div class="col-lg-12 top-menu">
           <div class="row">
             <div class="col-md-6 cname">
-              <div class="media-icons">
+              <div class="media-icons FadeInleft">
                 <a href="#"><ion-icon name="logo-facebook" class="ms"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-instagram" class="ms"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-linkedin" class="ms"></ion-icon></a>
@@ -125,27 +125,11 @@
             <div class="enquiry-form">
               <form action="#" method="post">
                 <h3>For Enquiry</h3>
-                <div class="input-group">
                   <div class="form-group">
                     <!-- <label for="fname">First Name:</label><br> -->
                     <ion-icon name="person-outline" class="form-icon"></ion-icon>
-                    <input type="text" id="fname" name="fname" placeholder="First Name *" required>
+                    <input type="text" id="fname" name="fname" placeholder="Full Name *" required>
                   </div>
-                  <div class="form-group">
-                    <!-- <label for="lname">
-                      <ion-icon name="person-outline" class="form-icon"></ion-icon>
-                      <span class="hidden-label">Last Name *</span>
-                    </label> -->
-                    <ion-icon name="person-outline" class="form-icon"></ion-icon>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name *" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <!-- <label for="company">Company:</label><br> -->
-                  <ion-icon name="business-outline" class="form-icon"></ion-icon>
-                  <!-- <i class="fa-thin fa-building"></i> -->
-                  <input type="text" id="company" placeholder="company *" name="Company">
-                </div>
                 <div class="form-group">
                   <!-- <label for="email">Email:</label><br> -->
                   <ion-icon name="mail-outline" class="form-icon"></ion-icon>
@@ -157,26 +141,9 @@
                   <input type="tel" id="phone" placeholder="Phone *" name="phone" required>
                 </div>
                 <div class="form-group">
-                  <!-- <label for="product">Product:</label><br> -->
-                  <ion-icon name="layers-outline" class="form-icon"></ion-icon>
-                  <select id="Product" name="product" placeholder="Product" required>
-                    <option value="" >Product</option>
-                    <option value="option">option </option>
-                    <option value="option1">option 1</option>
-                    <option value="option2">option 2</option>
-                    <option value="option3">option 3</option>
-                  </select>
-                </div>
-                <div class="form-group">
                   <!-- <label for="enquiry">Type of Enquiry:</label><br> -->
                   <ion-icon name="chatbubble-ellipses-outline" class="form-icon"></ion-icon>
-                  <select id="enquiry" name="enquiry" placeholder="type" required>
-                    <option value="" >Type ofquery</option>
-                    <option value="General">General</option>
-                    <option value="Sales">Sales</option>
-                    <option value="Support">Support</option>
-                    <option value="Other">Other</option>
-                  </select>
+                  <textarea type="text" id="message" placeholder="message *" name="message" required></textarea>
                 </div>
                 <input type="submit" value="Submit">
               </form>
