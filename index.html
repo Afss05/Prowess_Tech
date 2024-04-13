@@ -16,14 +16,16 @@
 
   <!-- style css link -->
   <link rel="stylesheet" href="asset/css/style.css">
-  <script src="asset/css/script.js"></script>
+  <!-- <script src="asset/css/script.js"></script> -->
 
   <!-- icons link -->
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -31,7 +33,9 @@
   <!-- header -->
 
   <div class="top_nav col-lg-12 d-flex ">
-    <a href="tel:+91 1234567890"><span><ion-icon name="call"></ion-icon></span> 1234567890</a>
+    <a href="tel:+91 1234567890">
+      <!-- <span><ion-icon name="call"></ion-icon></span> 1234567890 -->
+    </a>
     <a target="_blank" rel="noopener noreferrer">
       <p style="margin-bottom: 0px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;"
         class="">Prowess</p>
@@ -42,9 +46,11 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sec-nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./asset/images/log.jpeg" alt="" srcset="" width="auto" height="50px"></a>
-      <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="./asset/images/logo8.jpg" alt="" srcset="" width="auto"
+          height="50px"></a>
+      <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
@@ -61,9 +67,12 @@
               Services
             </a>
             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Web Development</a></li><hr>
-              <li><a class="dropdown-item" href="#">App Denelopment</a></li><hr>
-              <li><a class="dropdown-item" href="#">UI/UX Designing</a></li><hr>
+              <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">App Denelopment</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
+              <hr>
               <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
             </ul>
           </li>
@@ -125,11 +134,11 @@
             <div class="enquiry-form">
               <form action="#" method="post">
                 <h3>For Enquiry</h3>
-                  <div class="form-group">
-                    <!-- <label for="fname">First Name:</label><br> -->
-                    <ion-icon name="person-outline" class="form-icon"></ion-icon>
-                    <input type="text" id="fname" name="fname" placeholder="Full Name *" required>
-                  </div>
+                <div class="form-group">
+                  <!-- <label for="fname">First Name:</label><br> -->
+                  <ion-icon name="person-outline" class="form-icon"></ion-icon>
+                  <input type="text" id="fname" name="fname" placeholder="Full Name *" required>
+                </div>
                 <div class="form-group">
                   <!-- <label for="email">Email:</label><br> -->
                   <ion-icon name="mail-outline" class="form-icon"></ion-icon>
@@ -154,46 +163,94 @@
     </div>
   </div>
 
-<!-- services -->
+  <!-- services -->
 
-<div class="home-services">
-  <div class="container">
-    <h2>OUR SERVICES</h2>
-    <div class="col-lg-12">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="web-con">
-            <h4>Web Development</h4>
-            <p>Welcome to Prowess Web Development Services - where pixels meet perfection and code transforms visions into reality. Harnessing the power of innovation, we sculpt websites that not only captivate but also drive results. From sleek designs to seamless functionality, we craft digital experiences that elevate your brand and leave a lasting impression. Let's embark on a journey of digital excellence together. Your online success starts here.</p>
+  <!-- <div class="home-services">
+    <div class="container">
+      <h2>OUR SERVICES</h2>
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="web-con">
+              <h4>Web Development</h4>
+              <p>Welcome to Prowess Web Development Services - where pixels meet perfection and code transforms visions
+                into reality. Harnessing the power of innovation, we sculpt websites that not only captivate but also
+                drive results. From sleek designs to seamless functionality, we craft digital experiences that elevate
+                your brand and leave a lasting impression. Let's embark on a journey of digital excellence together.
+                Your online success starts here.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>App Development</h4>
+            <p>Step into the realm of limitless possibilities with Prowess App Development Services. We don't just build
+              apps; we architect experiences that redefine industries. From concept to launch, our team breathes life
+              into your ideas, creating intuitive, elegant, and high-performing applications that resonate with users
+              worldwide. Elevate your digital presence and conquer new horizons with our expertise by your side. Let's
+              innovate, let's create, let's conquer the app world together.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <h4>App Development</h4>
-          <p>Step into the realm of limitless possibilities with Prowess App Development Services. We don't just build apps; we architect experiences that redefine industries. From concept to launch, our team breathes life into your ideas, creating intuitive, elegant, and high-performing applications that resonate with users worldwide. Elevate your digital presence and conquer new horizons with our expertise by your side. Let's innovate, let's create, let's conquer the app world together.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>UI/UX Designing</h4>
+            <p>Welcome to Prowess UI/UX Design Services - where aesthetics meet functionality and user experience reigns
+              supreme. We specialize in crafting interfaces that not only dazzle the eye but also delight the soul. Our
+              design philosophy revolves around empathy, understanding your users' needs, and translating them into
+              intuitive, seamless journeys. With pixel-perfect precision and a passion for innovation, we elevate your
+              brand to new heights, one click at a time. Let's collaborate and create experiences that leave a lasting
+              impression. Your journey to exceptional design starts here.</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Software Testing</h4>
+            <p>Welcome to Prowess Software Testing Services - where precision meets perfection and quality is
+              non-negotiable. We specialize in ensuring that your software operates flawlessly, delivering an
+              unparalleled user experience every time. Our dedicated team meticulously examines every line of code,
+              leaving no stone unturned in our quest for perfection. With a comprehensive suite of testing methodologies
+              and a commitment to excellence, we'll help you release software that not only meets but exceeds
+              expectations. Let's ensure your digital products stand the test of time. Your journey to flawless software
+              starts here.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h4>UI/UX Designing</h4>
-          <p>Welcome to Prowess UI/UX Design Services - where aesthetics meet functionality and user experience reigns supreme. We specialize in crafting interfaces that not only dazzle the eye but also delight the soul. Our design philosophy revolves around empathy, understanding your users' needs, and translating them into intuitive, seamless journeys. With pixel-perfect precision and a passion for innovation, we elevate your brand to new heights, one click at a time. Let's collaborate and create experiences that leave a lasting impression. Your journey to exceptional design starts here.</p>
+    </div>
+  </div> -->
+
+  <div class="program-logo mt-4">
+    <div class="container">
+      <h2 class="lang-name">Languages</h2>
+      <div class="photo-wrapper mt-5" id="photoWrapper">
+        <div class="photo">
+          <img src="./asset/images/program-logo/html.png" width="200px" height="150px">
         </div>
-        <div class="col-md-6">
-          <h4>Software Testing</h4>
-          <p>Welcome to Prowess Software Testing Services - where precision meets perfection and quality is non-negotiable. We specialize in ensuring that your software operates flawlessly, delivering an unparalleled user experience every time. Our dedicated team meticulously examines every line of code, leaving no stone unturned in our quest for perfection. With a comprehensive suite of testing methodologies and a commitment to excellence, we'll help you release software that not only meets but exceeds expectations. Let's ensure your digital products stand the test of time. Your journey to flawless software starts here.</p>
+        <div class="photo">
+          <img src="./asset/images/program-logo/CSS.png">
+        </div>
+        <div class="photo">
+          <img src="./asset/images/program-logo/javascript.png">
+        </div>
+        <div class="photo">
+          <img src="./asset/images/program-logo/react.js-img.png">
+        </div>
+        <div class="photo">
+          <img src="./asset/images/program-logo/sql.png">
+        </div>
+        <div class="photo">
+          <img src="./asset/images/program-logo/php.png">
         </div>
       </div>
     </div>
   </div>
-</div>
+
+
+  <!-- script -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 
 
-<!-- script -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
+  <script src="/asset/css/script.js"></script>
 
 </body>
+
 
 </html>
