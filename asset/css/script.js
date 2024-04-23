@@ -1,34 +1,35 @@
 
 
+// ......................smtp .....................
 
-const photos = Array.from(document.getElementsByClassName("photo"));
-const photoWrapper = document.getElementById("photoWrapper");
+const form = document.querySelector('form');
 
-let count = 0;
-photos.forEach((photo) => {
-    count++;
-    if (count % 2) {
-        photo.classList.add("even");
-    }
-});
-
-photoWrapper.addEventListener("scroll", () => {
-    photos.forEach(checkPosition);
-});
-
-function checkPosition(photo) {
-    if (photo.getBoundingClientRect().right - 3 <= 0) {
-        photo.remove();
-        photoWrapper.append(photo);
-        photoWrapper.scrollLeft = 0;
-        return;
-    }
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "sheik.appxperts@gmail.com",
+        Password : "6A2EFD7FE8CFCBB6EF8220DB3A0C5EFA56D3",
+        To : 'sheik.appxperts@gmail.com',
+        From : "sheik.appxperts@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
 
-function infiniteScroll() {
-    photoWrapper.scrollLeft++;
-    requestAnimationFrame(infiniteScroll);
-}
+form.addEventListener("sumbit", (e) => {
+    e.preventDefault();
 
-infiniteScroll();
+    sendEmail();
+})
   
+
+new Splide(".splide", {
+  type: "loop",
+  perPage: 4,
+  arrows: false,
+  pagination: false,
+  focus: "center",
+  gap: "1em"
+}).mount(window.splide.Extensions);
