@@ -33,35 +33,41 @@
     .cname {
         padding-top: 0px !important;
     }
-    .about-con h2 {
-        font-size: 35px !important;
-        margin-top: 10px;
-    }
+    
 }
 
 .sec-nav{
     width: auto;
-    height: 80px;
-    background-color: white;
-    /* background-color: transparent; */        /*   changes  */
-    /* box-shadow: 1px 1px 2px black; */
+    height: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 18px;
 }
 
-.navbar-brand{
-    padding-left: 50px;
-}
+/* .navbar-brand{
+    padding-left: 80px;
+} */
 
-.navbar-brand img {
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px #ADD8E6;
-}
+/* .navbar-brand img {
+    width: 200px;
+    height: 70px;
+} */
 
 .nav-item {
     margin-left: 20px;
 }
+
+.ser_item {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adjust shadow as needed */
+}
+
+.nav-link:hover + .ser_item {
+    display: block;
+}
+
 .dropdown-menu li {
     width: 100% !important;
     padding: 5px 20px;
@@ -83,9 +89,8 @@ hr{
 }
 
 .top_bar {
-    /* background-color: #005CA9; */
-    background-color: #edf6fd;
-    height: 450px;
+    background-color: #005CA9;
+    height: auto;
     width: 100%;
 }
 
@@ -94,7 +99,7 @@ hr{
         padding-left: 10px;
         /* margin-top: -20px; */
         height: 50px;
-        width: 10px;
+        /* width: 10px; */
     }
     .nav-btn {
         margin-right: 10px;
@@ -107,29 +112,50 @@ hr{
     .ms {
         z-index: -10px;
     }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-    .navbar-nav {
-        margin-left: 500px !important;
-    }                                 /*   change pannanum          */
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .navbar-nav{
-        margin-left: 180px;
+    .cname h1{
+        margin-top: 50px;
+        font-size: 35px !important;
+    }
+    .pt_trans h5 {
+        padding-top: -10px;
+        font-size: 25px !important;
+        font-family: "Alegreya SC", serif;
+        /* font-weight: bold; */
+    }
+    .about-con h2 {
+        font-size: 30px !important;
+        margin-top: 10px;
+        text-align: left !important;
+    }
+    .pt_trans img {
+        height: 300px !important;
+        width: 100%;
+    }
+    .pt-img {
+        margin-top: 50px;
     }
 }
+
+/* @media screen and (min-width: 992px) and (max-width: 1024px) {
+    .navbar-nav {
+        margin-left: 0px !important;
+    }
+} */
+
+/* @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .navbar-nav{
+        margin-left: 150px;
+    }
+} */
 
 /* top bar */
 
 .top-menu {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .ms {
-    color: black;
-    /* color: white; */
+    color: white;
     font-size: 25px;
 }
 
@@ -138,8 +164,7 @@ hr{
 }
 
 .cname h1{
-    /* color: white; */
-    color: black;
+    color: white;
     font-family: "Alegreya SC", serif;
     font-size: 70px;
 }
@@ -148,8 +173,8 @@ hr{
     font-size: 18px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* color: white; */
-    color: black;
+    color: white;
+    text-align: justify;
 }
 .box{
     animation: animName 2s linear infinite;
@@ -168,11 +193,33 @@ hr{
      }
   }
 
-.zoom-img-container:hover{
-    border-radius: 30%;
-    box-shadow: 0 0 40px #01FFF4;
-    /* height: 400px; */
-}
+      /* Add keyframes animation for left-right and up-down movement */
+      @keyframes moveImage {
+        0% {
+          transform: translate(0, 0); /* Start at original position */
+        }
+        25% {
+          transform: translate(20px, 0); /* Move right */
+        }
+        50% {
+          transform: translate(20px, 20px); /* Move down */
+        }
+        75% {
+          transform: translate(0, 20px); /* Move left */
+        }
+        100% {
+          transform: translate(0, 0); /* Return to original position */
+        }
+      }
+    
+      /* Style for the zoom-img-container image */
+      .zoom-img-container img {
+        animation: moveImage 4s infinite ease-in-out; /* Smooth looping animation */
+        position: relative; /* Ensure animation applies correctly */
+        transition: transform 0.3s ease-in-out; /* Smooth hover effects */
+      }
+
+      
 
 /* home about */
 
@@ -191,17 +238,17 @@ hr{
     text-align: center;
     font-size: 18px;
 }
-
+/* 
 .pt_trans {
-    margin-top: 20px;
-    /* border: 2px solid rebeccapurple; */
-}
+    margin-top: 50px;
+    border: 2px solid rebeccapurple;
+} */
 
 .pt_trans h5 {
     padding-top: 7px;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-size: 35px;
+    font-family: "Alegreya SC", serif;
+    /* font-weight: bold; */
 }
 
 .pt_trans p {
@@ -225,7 +272,7 @@ hr{
     text-align: center;
     padding: 20px 0 40px 0;
     font-family: "Alegreya SC", serif;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .cart {
@@ -245,10 +292,11 @@ hr{
 .cart h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .cart p {
+    margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -263,22 +311,6 @@ hr{
     font-size: 40px;
     color: #005CA9;
 } 
-
-/* srvice page */
-
-.ser h3 {
-    text-align: center;
-    padding: 30px 0 10px 0;
-    font-family: "Alegreya SC", serif;
-    font-size: 30px;
-}
-
-.ser p {
-    padding-top: 10px;
-    font-size: 17px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 /* form design code */
 
@@ -401,6 +433,19 @@ input[type="submit"] {
     margin-top: 50px;
 }
 
+.abt_pge_con {
+    margin-top: 10px !important;
+    font-size: 17px !important;
+}
+
+.abt_pge_con b {
+    font-family: "Alegreya SC", serif;
+    font-size: 22px;
+}
+
+.about-body img{
+    margin-top: 80px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .about-top {
@@ -412,6 +457,16 @@ input[type="submit"] {
     }
     .about-body {
         height: auto;
+    }
+    .about-content p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        text-align: justify;
+        margin-top: 50px;
+    }
+    .about-content h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
     }
 }
 
@@ -426,7 +481,7 @@ input[type="submit"] {
 
 .top-menu-bar {
     background-color: #005CA9;
-    height: 200px;
+    height: 250px;
     color: white;
     /* text-align: center; */
     display: flex;
@@ -471,6 +526,7 @@ input[type="submit"] {
 }
 
 .lan_logo {
+    margin-top: 100px;
 	align-items: center;
 	/* background: #E3E3E3; */
 	display: flex;
@@ -481,7 +537,7 @@ input[type="submit"] {
 .slider {
 	/* background: white; */
 	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
-	height: 180px;
+	height: 150px;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -540,6 +596,13 @@ input[type="submit"] {
         height: 300px;
         justify-content: center;
     }
+
+    .lan_logo h3{
+        text-align: center;
+        font-size: 35px;
+        font-family: "Alegreya SC", serif;
+        padding: 30px 0 40px 0;
+    }
     
     .slider {
         /* background: white; */
@@ -549,6 +612,16 @@ input[type="submit"] {
         overflow: hidden;
         position: relative;
         width: auto;
+    }
+
+    .why h3 {
+        font-size: 30px;
+    }
+
+    .cart h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-size: 20px;
     }
     
     .slider::before,
@@ -588,3 +661,21 @@ input[type="submit"] {
         100% { transform: translateX(calc(-250px * 5))}
     }
 }
+
+
+
+/* footer */
+
+.footer h3, .footer h4 {
+    font-family: "Alegreya SC", serif;
+}
+
+.footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer p a {
+    text-decoration: none;
+}
+
+
